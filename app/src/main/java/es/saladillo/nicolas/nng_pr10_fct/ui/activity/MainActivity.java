@@ -32,12 +32,17 @@ public class MainActivity extends AppCompatActivity {
     private void setupToolbar() {
         Toolbar toolbar = ActivityCompat.requireViewById(this, R.id.toolbar);
         drawerLayout = ActivityCompat.requireViewById(this, R.id.drawerLayout);
-//        setSupportActionBar(toolbar);
+
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+
         AppBarConfiguration appBarConfiguration =
                 new AppBarConfiguration.Builder(
                         R.id.destProximasVisitasFragment, R.id.destVisitasFragment, R.id.destEmpresasFragment,R.id.destEstudiantesFragment,R.id.destAcercaDeFragment)
                         .setDrawerLayout(drawerLayout)
                         .build();
+
         NavigationUI.setupWithNavController(toolbar, navController, appBarConfiguration);
     }
 

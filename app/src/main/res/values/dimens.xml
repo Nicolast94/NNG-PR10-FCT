@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="extraSpacing_16dp">16dp</dimen>
+    <dimen name="standardSpacing_8dp">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+</resources>
