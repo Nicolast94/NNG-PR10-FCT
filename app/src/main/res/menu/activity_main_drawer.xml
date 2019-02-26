@@ -29,6 +29,10 @@
                 android:id="@+id/destAcercaDeFragment"
                 android:icon="@drawable/ic_prueba"
                 android:title="Acerca de" />
+            <item
+                android:id="@+id/destPreferencias"
+                android:icon="@drawable/ic_prueba"
+                android:title="Ajustes" />
 
         </menu>
     </item>

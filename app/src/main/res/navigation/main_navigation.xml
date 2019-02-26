@@ -59,4 +59,8 @@
         android:id="@+id/creacionModifVisita"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.creacion_modif_visita.CreacionModifVisita"
         android:label="CreacionModifVisita" />
+    <fragment
+        android:id="@+id/destPreferencias"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.preferencias.Preferencias"
+        android:label="Preferencias" />
 </navigation>

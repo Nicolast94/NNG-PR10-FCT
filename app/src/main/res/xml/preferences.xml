@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <SeekBarPreference
+        android:key="INTERVALO"
+        android:title="Nº días hasta siguiente visita"
+        android:summary="Bla bla bla"
+        android:max="15"
+        android:defaultValue="15" />
+
+</PreferenceScreen>
