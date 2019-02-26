@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/destProximasVisitasFragment">
+
+    <fragment
+        android:id="@+id/destProximasVisitasFragment"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.proximas_visitas.ProximasVisitas"
+        android:label="ProximasVisitasFragment"
+        tools:layout="@layout/proximas_visitas_fragment"/>
+    <fragment
+        android:id="@+id/destAcercaDeFragment"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.acerca_de.AcercaDe"
+        android:label="AcercaDeFragment"
+        tools:layout="@layout/acerca_de_fragment" />
+    <fragment
+        android:id="@+id/destEmpresasFragment"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.Empresas"
+        android:label="EmpresasFragment"
+        tools:layout="@layout/empresas_fragment" />
+    <fragment
+        android:id="@+id/destEstudiantesFragment"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.Estudiantes"
+        android:label="EstudiantesFragment"
+        tools:layout="@layout/estudiantes_fragment" />
+    <fragment
+        android:id="@+id/destVisitasFragment"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.Visitas"
+        android:label="VisitasFragment"
+        tools:layout="@layout/visitas_fragment" />
+</navigation>

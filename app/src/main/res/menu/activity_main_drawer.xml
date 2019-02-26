@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/destProximasVisitasFragment"
+            android:icon="@drawable/ic_prueba"
+            android:title="Proximas visitas" />
+        <item
+            android:id="@+id/destVisitasFragment"
+            android:icon="@drawable/ic_prueba"
+            android:title="Visitas" />
+        <item
+            android:id="@+id/destEmpresasFragment"
+            android:icon="@drawable/ic_prueba"
+            android:title="Empresas" />
+        <item
+            android:id="@+id/destEstudiantesFragment"
+            android:icon="@drawable/ic_prueba"
+            android:title="Estudiantes" />
+
+    </group>
+
+    <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/destAcercaDeFragment"
+                android:icon="@drawable/ic_prueba"
+                android:title="Acerca de" />
+
+        </menu>
+    </item>
+
+</menu>
