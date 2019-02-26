@@ -3,6 +3,7 @@ package es.saladillo.nicolas.nng_pr10_fct.ui.activity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.app.ActivityCompat;
+import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -17,6 +18,7 @@ import com.google.android.material.navigation.NavigationView;
 public class MainActivity extends AppCompatActivity {
 
     private NavController navController;
+    DrawerLayout drawerLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupToolbar() {
         Toolbar toolbar = ActivityCompat.requireViewById(this, R.id.toolbar);
-        DrawerLayout drawerLayout = ActivityCompat.requireViewById(this, R.id.drawerLayout);
+        drawerLayout = ActivityCompat.requireViewById(this, R.id.drawerLayout);
 //        setSupportActionBar(toolbar);
         AppBarConfiguration appBarConfiguration =
                 new AppBarConfiguration.Builder(
@@ -43,5 +45,14 @@ public class MainActivity extends AppCompatActivity {
         NavigationView navigationView =
                 ActivityCompat.requireViewById(this, R.id.navigationView);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 }
