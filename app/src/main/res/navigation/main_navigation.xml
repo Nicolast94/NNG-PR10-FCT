@@ -9,7 +9,11 @@
         android:id="@+id/destProximasVisitasFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.proximas_visitas.ProximasVisitas"
         android:label="ProximasVisitasFragment"
-        tools:layout="@layout/proximas_visitas_fragment"/>
+        tools:layout="@layout/proximas_visitas_fragment">
+        <action
+            android:id="@+id/actionProximasVisitasToCrearModifVisita"
+            app:destination="@id/creacionModifVisita" />
+    </fragment>
     <fragment
         android:id="@+id/destAcercaDeFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.acerca_de.AcercaDe"
@@ -19,15 +23,40 @@
         android:id="@+id/destEmpresasFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.Empresas"
         android:label="EmpresasFragment"
-        tools:layout="@layout/empresas_fragment" />
+        tools:layout="@layout/empresas_fragment" >
+        <action
+            android:id="@+id/actionEmpresasToCreacionModifEmpresa"
+            app:destination="@id/creacionModifEmpresa" />
+    </fragment>
     <fragment
         android:id="@+id/destEstudiantesFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.Estudiantes"
         android:label="EstudiantesFragment"
-        tools:layout="@layout/estudiantes_fragment" />
+        tools:layout="@layout/estudiantes_fragment" >
+        <action
+            android:id="@+id/actionEstudianteToCreacionModifEstudiante"
+            app:destination="@id/destCreacionModifEstudiante" />
+    </fragment>
     <fragment
         android:id="@+id/destVisitasFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.Visitas"
         android:label="VisitasFragment"
-        tools:layout="@layout/visitas_fragment" />
+        tools:layout="@layout/visitas_fragment" >
+        <action
+            android:id="@+id/actionVisitasToCreacionModifVisita"
+            app:destination="@id/creacionModifVisita" />
+    </fragment>
+    <fragment
+        android:id="@+id/destCreacionModifEstudiante"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.creacion_modif_estudiante.CreacionModifEstudiante"
+        android:label="CreacionModifEstudiante"
+        tools:layout="@layout/creacion_modif_estudiante_fragment" />
+    <fragment
+        android:id="@+id/creacionModifEmpresa"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.creacion_modif_empresa.CreacionModifEmpresa"
+        android:label="CreacionModifEmpresa" />
+    <fragment
+        android:id="@+id/creacionModifVisita"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.creacion_modif_visita.CreacionModifVisita"
+        android:label="CreacionModifVisita" />
 </navigation>

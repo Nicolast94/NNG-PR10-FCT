@@ -1,5 +1,6 @@
 package es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes;
 
+import androidx.core.app.ActivityCompat;
 import androidx.lifecycle.ViewModelProviders;
 
 import android.os.Bundle;
@@ -12,6 +13,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import es.saladillo.nicolas.nng_pr10_fct.R;
 
 public class Estudiantes extends Fragment {
@@ -32,7 +37,15 @@ public class Estudiantes extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         mViewModel = ViewModelProviders.of(this).get(EstudiantesViewModel.class);
-        // TODO: Use the ViewModel
+        setupViews();
     }
+
+    private void setupViews() {
+        FloatingActionButton fab = ActivityCompat.requireViewById(requireActivity(), R.id.fabCrearEstudiante);
+        fab.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.actionEstudianteToCreacionModifEstudiante));
+
+    }
+
+
 
 }
