@@ -6,19 +6,128 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.estudiantes.creacion_modif_estudiante.CreacionModifEstudiante">
 
-    <TextView
-        android:id="@+id/lblPrueba"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombreEmpresa"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Crear o editar empresa"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:hint="@string/hintTxtNombreEmpresa"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombreEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilDireccionEmpresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hintTxtDireccionEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/tilNombreEmpresa"
+        app:layout_constraintStart_toStartOf="@+id/tilNombreEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/tilNombreEmpresa">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtDireccionEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTelefonoEmpresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:counterEnabled="true"
+        app:counterMaxLength="9"
+        android:hint="@string/hintTxtTelefonoEmpresa"
+        app:layout_constraintStart_toStartOf="@+id/tilDireccionEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/tilDireccionEmpresa">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTelefonoEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCifEmpresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="@string/hitTxtCifEmpresa"
+        app:counterEnabled="true"
+        app:counterMaxLength="9"
+        app:layout_constraintBottom_toBottomOf="@+id/tilTelefonoEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/tilDireccionEmpresa"
+        app:layout_constraintStart_toEndOf="@+id/tilTelefonoEmpresa">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCifEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmailEmpresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hintTxtEmailEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/tilCifEmpresa"
+        app:layout_constraintStart_toStartOf="@+id/tilTelefonoEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/tilTelefonoEmpresa">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilPersonaContactoEmpresa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/hitnTxtPersonaContactoEmpresa"
+        app:layout_constraintEnd_toEndOf="@+id/tilCifEmpresa"
+        app:layout_constraintStart_toStartOf="@+id/tilEmailEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmailEmpresa">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtPersonaContactoEmpresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAgregarOActualizar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="@string/btnCreacion_Text"
+        app:layout_constraintEnd_toEndOf="@+id/tilPersonaContactoEmpresa"
+        app:layout_constraintStart_toStartOf="@+id/tilPersonaContactoEmpresa"
+        app:layout_constraintTop_toBottomOf="@+id/tilPersonaContactoEmpresa" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,4 +4,11 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hintTxtNombreEmpresa">Nombre de la empresa</string>
+    <string name="hintTxtDireccionEmpresa">Dirección</string>
+    <string name="hintTxtTelefonoEmpresa">Telefono</string>
+    <string name="hitTxtCifEmpresa">CIF</string>
+    <string name="hintTxtEmailEmpresa">E-mail</string>
+    <string name="hitnTxtPersonaContactoEmpresa">Persona de contacto</string>
+    <string name="btnCreacion_Text">Crear</string>
 </resources>
