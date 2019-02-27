@@ -15,12 +15,21 @@ import android.view.ViewGroup;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import androidx.navigation.Navigation;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import es.saladillo.nicolas.nng_pr10_fct.R;
+import es.saladillo.nicolas.nng_pr10_fct.data.model.Empresa;
 
 public class Empresas extends Fragment {
 
     private EmpresasViewModel mViewModel;
+    private EmpresasAdapter empresasAdapter;
+    RecyclerView listaEmpresas;
 
     public static Empresas newInstance() {
         return new Empresas();
@@ -41,8 +50,24 @@ public class Empresas extends Fragment {
 
     private void setupViews() {
         FloatingActionButton fab = ActivityCompat.requireViewById(requireActivity(), R.id.fabCrearEmpresa);
+        listaEmpresas = ActivityCompat.requireViewById(requireActivity(),R.id.lstEmpresas);
+
         fab.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.actionEmpresasToCreacionModifEmpresa));
 
+        setupRecyclerView();
+        List<Empresa> empresas = new ArrayList<>();
+        empresas.add(new Empresa(1,"Yen Sid","77202334M","Pepe landia","987586868","@melapela.com","asdasd","Pepe"));
+        empresas.add(new Empresa(2,"Electronic Shit","45702334M","Greed Land","987586868","@melapela.com","asdasd","Satanas"));
+        empresasAdapter.submitList(empresas);
+    }
+
+    private void setupRecyclerView() {
+        empresasAdapter = new EmpresasAdapter();
+
+        listaEmpresas.setHasFixedSize(true);
+        listaEmpresas.setLayoutManager(new GridLayoutManager(requireContext(),1));
+        listaEmpresas.setItemAnimator(new DefaultItemAnimator());
+        listaEmpresas.setAdapter(empresasAdapter);
     }
 
 }

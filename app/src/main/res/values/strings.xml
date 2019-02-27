@@ -11,4 +11,5 @@
     <string name="hintTxtEmailEmpresa">E-mail</string>
     <string name="hitnTxtPersonaContactoEmpresa">Persona de contacto</string>
     <string name="btnCreacion_Text">Crear</string>
+    <string name="lblSinEmpresas">Añadir empresa</string>
 </resources>
