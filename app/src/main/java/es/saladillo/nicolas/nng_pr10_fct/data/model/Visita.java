@@ -17,15 +17,15 @@ public class Visita {
     @ColumnInfo(name = "id_estudiante")
     private long id_estudiante;
     @ColumnInfo(name = "dia")
-    private LocalDate dia;
+    private String dia;
     @ColumnInfo(name = "hora_inicio")
-    private LocalTime hora_inicio;
+    private String hora_inicio;
     @ColumnInfo(name = "hora_fin")
-    private LocalTime hora_fin;
+    private String hora_fin;
     @ColumnInfo(name = "observaciones")
-    private LocalDate observaciones;
+    private String observaciones;
 
-    public Visita(long id_visita,long id_estudiante, LocalDate dia, LocalTime hora_inicio, LocalTime hora_fin, LocalDate observaciones) {
+    public Visita(long id_visita, long id_estudiante, String dia, String hora_inicio, String hora_fin, String observaciones) {
         this.id_visita = id_visita;
         this.id_estudiante = id_estudiante;
         this.dia = dia;
@@ -38,36 +38,8 @@ public class Visita {
         return id_visita;
     }
 
-    public LocalDate getDia() {
-        return dia;
-    }
-
-    public void setDia(LocalDate dia) {
-        this.dia = dia;
-    }
-
-    public LocalTime getHora_inicio() {
-        return hora_inicio;
-    }
-
-    public void setHora_inicio(LocalTime hora_inicio) {
-        this.hora_inicio = hora_inicio;
-    }
-
-    public LocalTime getHora_fin() {
-        return hora_fin;
-    }
-
-    public void setHora_fin(LocalTime hora_fin) {
-        this.hora_fin = hora_fin;
-    }
-
-    public LocalDate getObservaciones() {
-        return observaciones;
-    }
-
-    public void setObservaciones(LocalDate observaciones) {
-        this.observaciones = observaciones;
+    public void setId_visita(long id_visita) {
+        this.id_visita = id_visita;
     }
 
     public long getId_estudiante() {
@@ -76,5 +48,37 @@ public class Visita {
 
     public void setId_estudiante(long id_estudiante) {
         this.id_estudiante = id_estudiante;
+    }
+
+    public String getDia() {
+        return dia;
+    }
+
+    public void setDia(String dia) {
+        this.dia = dia;
+    }
+
+    public String getHora_inicio() {
+        return hora_inicio;
+    }
+
+    public void setHora_inicio(String hora_inicio) {
+        this.hora_inicio = hora_inicio;
+    }
+
+    public String getHora_fin() {
+        return hora_fin;
+    }
+
+    public void setHora_fin(String hora_fin) {
+        this.hora_fin = hora_fin;
+    }
+
+    public String getObservaciones() {
+        return observaciones;
+    }
+
+    public void setObservaciones(String observaciones) {
+        this.observaciones = observaciones;
     }
 }

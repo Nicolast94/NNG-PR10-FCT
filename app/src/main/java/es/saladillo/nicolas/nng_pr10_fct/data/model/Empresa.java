@@ -34,6 +34,10 @@ public class Empresa {
         this.nombre_contacto = nombre_contacto;
     }
 
+    public void setId(long id) {
+        this.id = id;
+    }
+
     public long getId() {
         return id;
     }

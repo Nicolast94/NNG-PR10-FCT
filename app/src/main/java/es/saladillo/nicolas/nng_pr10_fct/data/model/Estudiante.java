@@ -12,7 +12,7 @@ import static androidx.room.ForeignKey.RESTRICT;
 public class Estudiante {
     @PrimaryKey(autoGenerate = true)
     private long id;
-    @ColumnInfo(name = "id_empresa_asignada")
+    @ColumnInfo(name = "id_empresaAsignada")
     private long id_empresaAsignada;
     @ColumnInfo(name = "nombre")
     private String nombre;
