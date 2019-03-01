@@ -11,6 +11,7 @@ import androidx.room.Update;
 import es.saladillo.nicolas.nng_pr10_fct.data.base.BaseDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Estudiante;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.TarjetaEstudiante;
+import es.saladillo.nicolas.nng_pr10_fct.data.model.TarjetaVisita;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Visita;
 
 @Dao
@@ -27,8 +28,8 @@ public interface VisitaDao extends BaseDao<Visita> {
     int update(Visita... model);
 
     @Query("SELECT * FROM visita WHERE id_visita = :idVisita")
-    LiveData<Estudiante> consultarVisita(long idVisita);
+    LiveData<Visita> consultarVisita(long idVisita);
 
-    @Query("SELECT es.id,es.nombre,em.nombre,es.tutor FROM estudiante es, empresa em WHERE em.id = es.id_empresa_asignada ")
-    LiveData<TarjetaEstudiante> consultarInfoBasicaVisita();
+    @Query("SELECT v.id_visita, v.dia,v.hora_inicio,v.hora_fin,e.nombre AS nombre_estudiante FROM visita v, estudiante e WHERE v.id_estudiante = e.id")
+    LiveData<TarjetaVisita> consultarInfoBasicaVisita();
 }

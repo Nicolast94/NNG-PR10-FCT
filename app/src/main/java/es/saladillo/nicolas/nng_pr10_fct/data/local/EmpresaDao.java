@@ -33,7 +33,7 @@ public interface EmpresaDao extends BaseDao<Empresa> {
     @Query("SELECT nombre FROM empresa WHERE id = :idEmpresa")
     LiveData<String> consultarNombreEmpresa(long idEmpresa);
 
-    @Query("SELECT id,nombre,nombre_contacto,telefono,logo FROM empresa ")
+    @Query("SELECT id,nombre,nombre_contacto,telefono FROM empresa ")
     LiveData<TarjetaEmpresa> consultarInfoBasicaEmpresas();
 
 }

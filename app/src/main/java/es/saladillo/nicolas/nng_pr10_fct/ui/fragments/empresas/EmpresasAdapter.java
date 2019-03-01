@@ -68,7 +68,7 @@ public class EmpresasAdapter extends ListAdapter<Empresa, EmpresasAdapter.ViewHo
         void bind(Empresa empresa) {
             lblNombre.setText(empresa.getNombre());
             lblPersonaContacto.setText(empresa.getNombre_contacto());
-            lblTelefono.setText(empresa.getTelefono());
+            lblTelefono.setText(empresa.getDireccion_sede());
         }
     }
 }

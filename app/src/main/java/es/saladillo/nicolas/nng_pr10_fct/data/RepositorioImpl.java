@@ -31,6 +31,7 @@ public class RepositorioImpl implements Repositorio {
     //Metodos empresa
     @Override
     public LiveData<List<Empresa>> consultarCadaEmpresa() {
+        empresaDao.consultarCadaEmpresa().getValue();
         return empresaDao.consultarCadaEmpresa();
     }
 
@@ -38,16 +39,17 @@ public class RepositorioImpl implements Repositorio {
     public LiveData<Resource<Long>> insertEmpresa(final Empresa empresa) {
         MutableLiveData<Resource<Long>> result = new MutableLiveData<>();
 
-        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
-
-            result.postValue(Resource.loading());
-            try {
-                long updated = empresaDao.insert(empresa);
-                result.postValue(Resource.success(updated));
-            } catch (Exception e) {
-                result.postValue(Resource.error(e));
-            }
-        });
+        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> empresaDao.insert(empresa));
+//        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
+//
+//            result.postValue(Resource.loading());
+//            try {
+//                long updated = empresaDao.insert(empresa);
+//                result.postValue(Resource.success(updated));
+//            } catch (Exception e) {
+//                result.postValue(Resource.error(e));
+//            }
+//        });
         return result;
     }
 

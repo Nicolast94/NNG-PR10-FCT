@@ -5,20 +5,18 @@ import androidx.room.ColumnInfo;
 import androidx.room.PrimaryKey;
 
 public class TarjetaEstudiante {
+    @ColumnInfo(name = "id")
     private long id_estudiante;
     private String nombre_estudiante;
     private String nombre_empresa;
     private String tutor;
 
-    public TarjetaEstudiante(long id_estudiante, String nombre_estudiante, String nombre_empresa, String tutor) {
-        this.id_estudiante = id_estudiante;
-        this.nombre_estudiante = nombre_estudiante;
-        this.nombre_empresa = nombre_empresa;
-        this.tutor = tutor;
-    }
-
     public long getId_estudiante() {
         return id_estudiante;
+    }
+
+    public void setId_estudiante(long id_estudiante) {
+        this.id_estudiante = id_estudiante;
     }
 
     public String getNombre_estudiante() {

@@ -12,21 +12,31 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
+import java.util.List;
 
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import es.saladillo.nicolas.nng_pr10_fct.R;
+import es.saladillo.nicolas.nng_pr10_fct.data.RepositorioImpl;
+import es.saladillo.nicolas.nng_pr10_fct.data.local.AppDatabase;
+import es.saladillo.nicolas.nng_pr10_fct.data.local.EmpresaDao;
+import es.saladillo.nicolas.nng_pr10_fct.data.local.EstudianteDao;
+import es.saladillo.nicolas.nng_pr10_fct.data.local.VisitaDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Empresa;
 
 public class Empresas extends Fragment {
 
     private EmpresasViewModel vm;
     private EmpresasAdapter empresasAdapter;
-    RecyclerView listaEmpresas;
+    private RecyclerView listaEmpresas;
+    private RepositorioImpl repositorio;
+    private TextView lblSinEmpresas;
 
     public static Empresas newInstance() {
         return new Empresas();
@@ -41,21 +51,35 @@ public class Empresas extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        vm = ViewModelProviders.of(this).get(EmpresasViewModel.class);
+        EstudianteDao estudianteDao = AppDatabase.getInstance(requireContext()).estudianteDao();
+        VisitaDao visitaDao = AppDatabase.getInstance(requireContext()).visitaDao();
+        EmpresaDao empresaDao = AppDatabase.getInstance(requireContext()).empresaDao();
+        repositorio = new RepositorioImpl(estudianteDao, visitaDao, empresaDao);
+        vm = ViewModelProviders.of(this, new EmpresasViewModelFactory(repositorio)).get(EmpresasViewModel.class);
         setupViews();
     }
 
     private void setupViews() {
         FloatingActionButton fab = ActivityCompat.requireViewById(requireActivity(), R.id.fabCrearEmpresa);
+        lblSinEmpresas = ActivityCompat.requireViewById(requireActivity(),R.id.lblSinEmpresas);
         listaEmpresas = ActivityCompat.requireViewById(requireActivity(),R.id.lstEmpresas);
 
         fab.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.actionEmpresasToCreacionModifEmpresa));
         setupRecyclerView();
-        vm.insertarEmpresa(new Empresa(1,"Yen Sid","77202334M","Pepe landia","987586868","@melapela.com","asdasd","Pepe"));
-        vm.insertarEmpresa(new Empresa(2,"Electronic Shit","45702334M","Greed Land","987586868","@melapela.com","asdasd","Satanas"));
-        vm.obtenerEmpresasBD();
-        empresasAdapter.submitList(vm.getTodasLasEmpresas());
+        vm.getTodasLasEmpresas().observe(this,empresas -> actualizarListaEmpresas(empresas));
+
     }
+
+    private void actualizarListaEmpresas(List<Empresa> empresas) {
+        empresasAdapter.submitList(empresas);
+        if(empresas.size() == 0){
+            lblSinEmpresas.setVisibility(View.VISIBLE);
+        }else{
+            lblSinEmpresas.setVisibility(View.INVISIBLE);
+        }
+
+    }
+
 
     private void setupRecyclerView() {
         empresasAdapter = new EmpresasAdapter();

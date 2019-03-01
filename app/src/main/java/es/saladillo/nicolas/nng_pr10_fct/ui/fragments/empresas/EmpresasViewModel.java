@@ -13,17 +13,15 @@ public class EmpresasViewModel extends ViewModel {
 
     public EmpresasViewModel(Repositorio repositorio) {
         this.repositorio = repositorio;
+        todasLasEmpresas = repositorio.consultarCadaEmpresa();
     }
 
     void insertarEmpresa(Empresa empresa) {
         repositorio.insertEmpresa(empresa);
     }
 
-    void obtenerEmpresasBD(){
-        this.todasLasEmpresas = repositorio.consultarCadaEmpresa();
-    }
 
-    public List<Empresa> getTodasLasEmpresas() {
-        return todasLasEmpresas.getValue();
+    public LiveData<List<Empresa>> getTodasLasEmpresas() {
+        return todasLasEmpresas;
     }
 }

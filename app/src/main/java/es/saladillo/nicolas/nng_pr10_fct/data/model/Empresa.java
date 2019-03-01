@@ -2,11 +2,13 @@ package es.saladillo.nicolas.nng_pr10_fct.data.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
-@Entity(tableName = "empresa")
+@Entity(tableName = "empresa",indices = {@Index("id")})
 public class Empresa {
     @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
     private long id;
     @ColumnInfo(name = "nombre")
     private String nombre;
@@ -23,8 +25,8 @@ public class Empresa {
     @ColumnInfo(name = "nombre_contacto")
     private String nombre_contacto;
 
-    public Empresa(long id_compania, String nombre, String cif, String direccion_sede, String telefono, String email, String logo, String nombre_contacto) {
-        this.id = id_compania;
+    public Empresa(long id, String nombre, String cif, String direccion_sede, String telefono, String email, String logo, String nombre_contacto) {
+        this.id = id;
         this.nombre = nombre;
         this.cif = cif;
         this.direccion_sede = direccion_sede;

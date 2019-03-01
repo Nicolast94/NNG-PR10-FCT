@@ -9,7 +9,7 @@ import es.saladillo.nicolas.nng_pr10_fct.data.model.Empresa;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Estudiante;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Visita;
 
-@Database(entities = {Estudiante.class, Empresa.class, Visita.class},version = 1)
+@Database(entities = {Estudiante.class, Empresa.class, Visita.class},version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     private static final String DATABASE_NAME = "instituto.db";
 

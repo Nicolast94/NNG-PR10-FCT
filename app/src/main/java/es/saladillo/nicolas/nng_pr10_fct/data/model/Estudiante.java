@@ -4,13 +4,15 @@ import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 import static androidx.room.ForeignKey.RESTRICT;
 
-@Entity(tableName = "estudiante",foreignKeys = @ForeignKey(entity = Empresa.class,parentColumns = "id",childColumns = "id_empresaAsignada",onDelete = RESTRICT,onUpdate = RESTRICT))
+@Entity(tableName = "estudiante",foreignKeys = @ForeignKey(entity = Empresa.class,parentColumns = "id",childColumns = "id_empresaAsignada",onDelete = RESTRICT,onUpdate = RESTRICT),indices = {@Index("id_empresaAsignada")})
 public class Estudiante {
     @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
     private long id;
     @ColumnInfo(name = "id_empresaAsignada")
     private long id_empresaAsignada;

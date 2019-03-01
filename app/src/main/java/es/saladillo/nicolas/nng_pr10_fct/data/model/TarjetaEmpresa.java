@@ -4,22 +4,22 @@ import androidx.room.ColumnInfo;
 import androidx.room.PrimaryKey;
 
 public class TarjetaEmpresa {
+    @ColumnInfo(name = "id")
     private long id;
+    @ColumnInfo(name = "nombre")
     private String nombre;
-    private String telefono;
+    @ColumnInfo(name = "nombre_contacto")
     private String nombre_contacto;
-    private String logo;
+    @ColumnInfo(name = "telefono")
+    private String telefono;
 
-    public TarjetaEmpresa(long id, String nombre, String nombre_contacto, String telefono, String logo) {
-        this.id = id;
-        this.nombre = nombre;
-        this.telefono = telefono;
-        this.nombre_contacto = nombre_contacto;
-        this.logo = logo;
-    }
 
     public long getId() {
         return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getNombre() {
@@ -44,13 +44,5 @@ public class TarjetaEmpresa {
 
     public void setNombre_contacto(String nombre_contacto) {
         this.nombre_contacto = nombre_contacto;
-    }
-
-    public String getLogo() {
-        return logo;
-    }
-
-    public void setLogo(String logo) {
-        this.logo = logo;
     }
 }

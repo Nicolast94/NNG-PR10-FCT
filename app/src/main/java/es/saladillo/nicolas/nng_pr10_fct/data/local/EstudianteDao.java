@@ -32,6 +32,6 @@ public interface EstudianteDao extends BaseDao<Estudiante> {
     @Query("SELECT nombre FROM estudiante WHERE id = :idEstudiante")
     LiveData<String> consultarNombreEstudiante(long idEstudiante);
 
-    @Query("SELECT es.id,es.nombre,em.nombre,es.tutor FROM estudiante es, empresa em WHERE em.id = es.id_empresaAsignada ")
+    @Query("SELECT es.id AS id,es.nombre AS nombre_estudiante,em.nombre AS nombre_empresa,es.tutor AS tutor FROM estudiante es, empresa em WHERE em.id = es.id_empresaAsignada ")
     LiveData<TarjetaEstudiante> consultarInfoBasicaEstudiantes();
 }

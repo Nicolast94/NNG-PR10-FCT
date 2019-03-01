@@ -6,13 +6,15 @@ import java.time.LocalTime;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
 import static androidx.room.ForeignKey.RESTRICT;
 
-@Entity(tableName = "visita", foreignKeys = @ForeignKey(entity = Estudiante.class, parentColumns = "id", childColumns = "id_estudiante", onDelete = RESTRICT, onUpdate = RESTRICT))
+@Entity(tableName = "visita", foreignKeys = @ForeignKey(entity = Estudiante.class, parentColumns = "id", childColumns = "id_estudiante", onDelete = RESTRICT, onUpdate = RESTRICT),indices = {@Index("id_estudiante")})
 public class Visita {
     @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id_visita")
     private long id_visita;
     @ColumnInfo(name = "id_estudiante")
     private long id_estudiante;
