@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.estudiantes.creacion_modif_estudiante.CreacionModifEstudiante">
 
     <com.google.android.material.textfield.TextInputLayout
@@ -49,9 +49,9 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:hint="@string/hintTxtTelefonoEmpresa"
         app:counterEnabled="true"
         app:counterMaxLength="9"
-        android:hint="@string/hintTxtTelefonoEmpresa"
         app:layout_constraintStart_toStartOf="@+id/tilDireccionEmpresa"
         app:layout_constraintTop_toBottomOf="@+id/tilDireccionEmpresa">
 
@@ -119,14 +119,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/btnAgregarOActualizar"
+        android:id="@+id/btnCrearOEditar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:background="@color/colorPrimary"
         android:backgroundTint="@color/colorPrimary"
-        android:text="@string/btnCreacion_Text"
+        android:text="Crear o editar"
         app:layout_constraintEnd_toEndOf="@+id/tilPersonaContactoEmpresa"
-        app:layout_constraintStart_toStartOf="@+id/tilPersonaContactoEmpresa"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilPersonaContactoEmpresa" />
 
 

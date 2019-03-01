@@ -16,11 +16,7 @@ import es.saladillo.nicolas.nng_pr10_fct.R;
 
 public class CreacionModifEmpresa extends Fragment {
 
-    private CreacionModifEmpresaViewModel mViewModel;
-
-    public static CreacionModifEmpresa newInstance() {
-        return new CreacionModifEmpresa();
-    }
+    private CreacionModifEmpresaViewModel vm;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -31,8 +27,7 @@ public class CreacionModifEmpresa extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(CreacionModifEmpresaViewModel.class);
-        // TODO: Use the ViewModel
+        vm = ViewModelProviders.of(this).get(CreacionModifEmpresaViewModel.class);
     }
 
 }

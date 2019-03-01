@@ -21,6 +21,7 @@ import java.util.List;
 import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.ItemTouchHelper;
 import androidx.recyclerview.widget.RecyclerView;
 import es.saladillo.nicolas.nng_pr10_fct.R;
 import es.saladillo.nicolas.nng_pr10_fct.data.RepositorioImpl;
@@ -82,12 +83,31 @@ public class Empresas extends Fragment {
 
 
     private void setupRecyclerView() {
+        ItemTouchHelper itemTouchHelper;
         empresasAdapter = new EmpresasAdapter();
+
+        itemTouchHelper = new ItemTouchHelper(new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.RIGHT) {
+            @Override
+            public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
+                return false;
+            }
+
+            @Override
+            public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
+                vm.eliminarEmpresa(empresasAdapter.getItem(viewHolder.getAdapterPosition()));
+            }
+        });
 
         listaEmpresas.setHasFixedSize(true);
         listaEmpresas.setLayoutManager(new GridLayoutManager(requireContext(),1));
         listaEmpresas.setItemAnimator(new DefaultItemAnimator());
         listaEmpresas.setAdapter(empresasAdapter);
+        itemTouchHelper.attachToRecyclerView(listaEmpresas);
+    }
+
+
+    {
+
     }
 
 }

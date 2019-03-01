@@ -20,6 +20,10 @@ public class EmpresasViewModel extends ViewModel {
         repositorio.insertEmpresa(empresa);
     }
 
+    void eliminarEmpresa(Empresa empresa) {
+        repositorio.deleteEmpresa(empresa);
+    }
+
 
     public LiveData<List<Empresa>> getTodasLasEmpresas() {
         return todasLasEmpresas;
