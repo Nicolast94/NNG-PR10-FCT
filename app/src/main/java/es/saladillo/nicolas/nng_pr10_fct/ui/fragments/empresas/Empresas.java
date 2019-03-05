@@ -67,7 +67,7 @@ public class Empresas extends Fragment {
 
         fab.setOnClickListener(Navigation.createNavigateOnClickListener(R.id.actionEmpresasToCreacionModifEmpresa));
         setupRecyclerView();
-        vm.getTodasLasEmpresas().observe(this,empresas -> actualizarListaEmpresas(empresas));
+        vm.getTodasLasEmpresas().observe(this, this::actualizarListaEmpresas);
 
     }
 
@@ -105,9 +105,5 @@ public class Empresas extends Fragment {
         itemTouchHelper.attachToRecyclerView(listaEmpresas);
     }
 
-
-    {
-
-    }
 
 }

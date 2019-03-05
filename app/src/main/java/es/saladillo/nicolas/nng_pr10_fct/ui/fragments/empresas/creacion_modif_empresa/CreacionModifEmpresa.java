@@ -11,6 +11,7 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import es.saladillo.nicolas.nng_pr10_fct.R;
 
@@ -28,6 +29,7 @@ public class CreacionModifEmpresa extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         vm = ViewModelProviders.of(this).get(CreacionModifEmpresaViewModel.class);
+        vm.setEmpresaId(getArguments().getLong("idEmpresa"));
     }
 
 }

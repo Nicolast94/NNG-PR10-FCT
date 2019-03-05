@@ -19,7 +19,7 @@ public class Visita {
     @ColumnInfo(name = "id_estudiante")
     private long id_estudiante;
     @ColumnInfo(name = "dia")
-    private String dia;
+    private long dia;
     @ColumnInfo(name = "hora_inicio")
     private String hora_inicio;
     @ColumnInfo(name = "hora_fin")
@@ -27,13 +27,21 @@ public class Visita {
     @ColumnInfo(name = "observaciones")
     private String observaciones;
 
-    public Visita(long id_visita, long id_estudiante, String dia, String hora_inicio, String hora_fin, String observaciones) {
+    public Visita(long id_visita, long id_estudiante, long dia, String hora_inicio, String hora_fin, String observaciones) {
         this.id_visita = id_visita;
         this.id_estudiante = id_estudiante;
         this.dia = dia;
         this.hora_inicio = hora_inicio;
         this.hora_fin = hora_fin;
         this.observaciones = observaciones;
+    }
+
+    public long getDia() {
+        return dia;
+    }
+
+    public void setDia(long dia) {
+        this.dia = dia;
     }
 
     public long getId_visita() {
@@ -50,14 +58,6 @@ public class Visita {
 
     public void setId_estudiante(long id_estudiante) {
         this.id_estudiante = id_estudiante;
-    }
-
-    public String getDia() {
-        return dia;
-    }
-
-    public void setDia(String dia) {
-        this.dia = dia;
     }
 
     public String getHora_inicio() {

@@ -54,7 +54,12 @@
     <fragment
         android:id="@+id/creacionModifEmpresa"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.creacion_modif_empresa.CreacionModifEmpresa"
-        android:label="CreacionModifEmpresa" />
+        android:label="CreacionModifEmpresa" >
+        <argument
+            android:name="idEmpresa"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
     <fragment
         android:id="@+id/creacionModifVisita"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.creacion_modif_visita.CreacionModifVisita"
