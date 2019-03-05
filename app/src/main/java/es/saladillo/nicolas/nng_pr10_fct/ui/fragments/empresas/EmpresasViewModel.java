@@ -16,10 +16,6 @@ public class EmpresasViewModel extends ViewModel {
         todasLasEmpresas = repositorio.consultarCadaEmpresa();
     }
 
-    void insertarEmpresa(Empresa empresa) {
-        repositorio.insertEmpresa(empresa);
-    }
-
     void eliminarEmpresa(Empresa empresa) {
         repositorio.deleteEmpresa(empresa);
     }

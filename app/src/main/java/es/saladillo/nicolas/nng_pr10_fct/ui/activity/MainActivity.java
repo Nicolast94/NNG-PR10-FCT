@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
 
     private NavController navController;
     DrawerLayout drawerLayout;
-    private Repositorio repositorio;
-    private MainActivityViewModel vm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,15 +36,6 @@ public class MainActivity extends AppCompatActivity {
         navController = Navigation.findNavController(this, R.id.navHostFragment);
         setupToolbar();
         setupNavigationDrawer();
-        setupViewModel();
-    }
-
-    private void setupViewModel() {
-        EstudianteDao estudianteDao = AppDatabase.getInstance(this).estudianteDao();
-        VisitaDao visitaDao = AppDatabase.getInstance(this).visitaDao();
-        EmpresaDao empresaDao = AppDatabase.getInstance(this).empresaDao();
-        repositorio = new RepositorioImpl(estudianteDao, visitaDao, empresaDao);
-        vm = ViewModelProviders.of(this, new MainActivityViewModelFactory(repositorio)).get(MainActivityViewModel.class);
     }
 
     private void setupToolbar() {

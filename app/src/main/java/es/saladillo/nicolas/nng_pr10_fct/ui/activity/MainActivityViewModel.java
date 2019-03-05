@@ -12,12 +12,6 @@ public class MainActivityViewModel extends ViewModel {
     private long id_estudiante_a_editar;
     private long id_visita_a_editar;
 
-    private final Repositorio repositorio;
-
-    public MainActivityViewModel(Repositorio repositorio) {
-        this.repositorio = repositorio;
-    }
-
     public long getId_empresa_a_editar() {
         return id_empresa_a_editar;
     }

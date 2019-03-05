@@ -18,6 +18,6 @@ public class CreacionModifEmpresaViewModelFactory implements ViewModelProvider.F
     @NonNull
     @Override
     public <T extends ViewModel> T create(@NonNull Class<T> modelClass) {
-        return (T) new EmpresasViewModel(repositorio);
+        return (T) new CreacionModifEmpresaViewModel(repositorio);
     }
 }

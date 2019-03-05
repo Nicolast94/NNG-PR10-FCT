@@ -39,10 +39,6 @@ public class Empresas extends Fragment {
     private RepositorioImpl repositorio;
     private TextView lblSinEmpresas;
 
-    public static Empresas newInstance() {
-        return new Empresas();
-    }
-
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
