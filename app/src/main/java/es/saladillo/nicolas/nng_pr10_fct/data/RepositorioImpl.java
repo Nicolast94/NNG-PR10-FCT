@@ -12,6 +12,7 @@ import es.saladillo.nicolas.nng_pr10_fct.data.local.EstudianteDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.local.VisitaDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Empresa;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Estudiante;
+import es.saladillo.nicolas.nng_pr10_fct.data.model.InfoTarjetaVisita;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.TarjetaEmpresa;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.TarjetaEstudiante;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Visita;
@@ -177,32 +178,80 @@ public class RepositorioImpl implements Repositorio {
 
     //Metodos Visita
     @Override
-    public LiveData<Resource<Long>> insertVisita(Visita student) {
-        return null;
+    public LiveData<Resource<Long>> insertVisita(Visita visita) {
+        MutableLiveData<Resource<Long>> result = new MutableLiveData<>();
+        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> visitaDao.insert(visita));
+//        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
+//
+//            result.postValue(Resource.loading());
+//            try {
+//                long updated = estudianteDao.insert(estudiante);
+//                result.postValue(Resource.success(updated));
+//            } catch (Exception e) {
+//                result.postValue(Resource.error(e));
+//            }
+//        });
+        return result;
     }
 
     @Override
-    public LiveData<Resource<Integer>> updateVisita(Estudiante student) {
-        return null;
+    public LiveData<Resource<Integer>> updateVisita(Visita visita) {
+        MutableLiveData<Resource<Integer>> result = new MutableLiveData<>();
+
+        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
+
+            result.postValue(Resource.loading());
+            try {
+                int updated = visitaDao.update(visita);
+                result.postValue(Resource.success(updated));
+            } catch (Exception e) {
+                result.postValue(Resource.error(e));
+            }
+        });
+        return result;
     }
 
     @Override
-    public LiveData<Resource<Integer>> deleteVisita(Estudiante student) {
-        return null;
+    public LiveData<Resource<Integer>> deleteVisita(Visita visita) {
+        MutableLiveData<Resource<Integer>> result = new MutableLiveData<>();
+
+        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
+
+            result.postValue(Resource.loading());
+            try {
+                int updated = visitaDao.delete(visita);
+                result.postValue(Resource.success(updated));
+            } catch (Exception e) {
+                result.postValue(Resource.error(e));
+            }
+        });
+        return result;
     }
 
     @Override
     public LiveData<List<Visita>> consultarCadaVisita() {
-        return null;
+        return visitaDao.consultarCadaVisita();
     }
 
     @Override
-    public LiveData<Estudiante> consultarVisita(long idVisita) {
-        return null;
+    public LiveData<Visita> consultarVisita(long idVisita) {
+        return visitaDao.consultarVisita(idVisita);
     }
 
     @Override
     public LiveData<TarjetaEstudiante> consultarInfoBasicaVisita() {
         return null;
     }
+
+    @Override
+    public LiveData<InfoTarjetaVisita> consultarInfoDeEstudianteParaVisita(long id) {
+        return null;
+    }
+
+    @Override
+    public LiveData<List<InfoTarjetaVisita>> consultarInfoTarjetasVisita() {
+        return visitaDao.consultarInfoTarjetasVisita();
+    }
+
+
 }

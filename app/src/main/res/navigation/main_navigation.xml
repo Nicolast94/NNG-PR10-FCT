@@ -71,7 +71,15 @@
     <fragment
         android:id="@+id/creacionModifVisita"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.creacion_modif_visita.CreacionModifVisita"
-        android:label="CreacionModifVisita" />
+        android:label="CreacionModifVisita" >
+        <action
+            android:id="@+id/action_creacionModifVisita_to_seleccionEstudianteVisitado"
+            app:destination="@id/destSeleccionEstudianteVisitado" />
+        <argument
+            android:name="idVisita"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
     <fragment
         android:id="@+id/destPreferencias"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.preferencias.Preferencias"
@@ -81,4 +89,14 @@
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.creacion_modif_estudiante.seleccionEmpresaEstudiante.SeleccionEmpresaEstudiante"
         android:label="Seleccion de empresa"
         tools:layout="@layout/seleccion_empresa_estudiante_fragment" />
+    <fragment
+        android:id="@+id/destSeleccionEstudianteVisitado"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.creacion_modif_visita.seleccionEstudianteVisitado.SeleccionEstudianteVisitado"
+        android:label="Seleccion de estudiante"
+        tools:layout="@layout/seleccion_estudiante_visitado_fragment">
+        <argument
+            android:name="idEstudiante"
+            android:defaultValue="0L"
+            app:argType="long" />
+    </fragment>
 </navigation>

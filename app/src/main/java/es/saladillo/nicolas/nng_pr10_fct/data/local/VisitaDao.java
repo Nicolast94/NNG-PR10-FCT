@@ -9,8 +9,7 @@ import androidx.room.OnConflictStrategy;
 import androidx.room.Query;
 import androidx.room.Update;
 import es.saladillo.nicolas.nng_pr10_fct.data.base.BaseDao;
-import es.saladillo.nicolas.nng_pr10_fct.data.model.Estudiante;
-import es.saladillo.nicolas.nng_pr10_fct.data.model.TarjetaEstudiante;
+import es.saladillo.nicolas.nng_pr10_fct.data.model.InfoTarjetaVisita;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.TarjetaVisita;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Visita;
 
@@ -32,4 +31,10 @@ public interface VisitaDao extends BaseDao<Visita> {
 
     @Query("SELECT v.id_visita, v.dia,v.hora_inicio,v.hora_fin,e.nombre AS nombre_estudiante FROM visita v, estudiante e WHERE v.id_estudiante = e.id")
     LiveData<TarjetaVisita> consultarInfoBasicaVisita();
+
+    @Query("SELECT v.id_visita AS id,es.nombre AS nombre,em.nombre AS empresa,v.dia AS dia,v.hora_inicio AS horaInicio,v.hora_fin AS horaFin FROM estudiante es, empresa em,visita v WHERE em.id = es.id_empresaAsignada AND v.id_estudiante = es.id")
+    LiveData<List<InfoTarjetaVisita>> consultarInfoTarjetasVisita();
+
+    @Query("SELECT v.id_visita AS id,es.nombre AS nombre,em.nombre AS empresa,v.dia AS dia,v.hora_inicio AS horaInicio,v.hora_fin AS horaFin FROM estudiante es, empresa em,visita v WHERE em.id = es.id_empresaAsignada AND v.id_estudiante = es.id AND em.id = :idEstudiante")
+    LiveData<InfoTarjetaVisita> consultarInfoUnaTarjetaVisita(long idEstudiante);
 }

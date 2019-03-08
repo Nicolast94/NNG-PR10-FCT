@@ -9,6 +9,7 @@ import es.saladillo.nicolas.nng_pr10_fct.data.model.Estudiante;
 
 public class CreacionModifEstudianteViewModel extends ViewModel {
     private long estudianteId;
+
     private LiveData<Estudiante> estudianteSeleccionado = new MutableLiveData<>();
 
     private final Repositorio repositorio;

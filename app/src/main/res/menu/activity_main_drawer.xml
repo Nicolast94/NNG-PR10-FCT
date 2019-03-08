@@ -6,19 +6,19 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/destProximasVisitasFragment"
-            android:icon="@drawable/ic_prueba"
+            android:icon="@drawable/ic_history_black_24dp"
             android:title="Proximas visitas" />
         <item
             android:id="@+id/destVisitasFragment"
-            android:icon="@drawable/ic_prueba"
+            android:icon="@drawable/ic_inbox_black_24dp"
             android:title="Visitas" />
         <item
             android:id="@+id/destEmpresasFragment"
-            android:icon="@drawable/ic_prueba"
+            android:icon="@drawable/ic_group_black_24dp"
             android:title="Empresas" />
         <item
             android:id="@+id/destEstudiantesFragment"
-            android:icon="@drawable/ic_prueba"
+            android:icon="@drawable/ic_person_black_24dp"
             android:title="Estudiantes" />
 
     </group>
@@ -27,11 +27,11 @@
         <menu>
             <item
                 android:id="@+id/destAcercaDeFragment"
-                android:icon="@drawable/ic_prueba"
+                android:icon="@drawable/ic_info_outline_black_24dp"
                 android:title="Acerca de" />
             <item
                 android:id="@+id/destPreferencias"
-                android:icon="@drawable/ic_prueba"
+                android:icon="@drawable/ic_settings_black_24dp"
                 android:title="Ajustes" />
 
         </menu>

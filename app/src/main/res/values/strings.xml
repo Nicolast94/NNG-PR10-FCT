@@ -26,4 +26,13 @@
     <string name="btnCrearEstudianteText">Crear estudiante</string>
     <string name="btnActualizarEstudianteText">Actualizar estudiante</string>
     <string name="lblSinEmpresasParaSeleccionar">No hay empresas</string>
+    <string name="lblSinVisitas_Text">No se han realizado visitas</string>
+    <string name="tilHintEstudianteVisitado">Estudiante visitado</string>
+    <string name="tilHintFechaVisita">Dia de visita</string>
+    <string name="tilHintHoraInicio">Hora de inicio</string>
+    <string name="tilHintHoraFin">Hora de fin</string>
+    <string name="tilHintObservaciones">Observaciones</string>
+    <string name="btnCrearVisita_text">Crear visita</string>
+    <string name="btnActualizarVisita_text">Actualizar visita</string>
+    <string name="lblSinEstudiantesVisitados_text">No hay estudiantes disponibles</string>
 </resources>

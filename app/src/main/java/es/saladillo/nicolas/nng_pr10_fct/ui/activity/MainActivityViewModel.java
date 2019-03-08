@@ -7,13 +7,18 @@ import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 import es.saladillo.nicolas.nng_pr10_fct.data.Repositorio;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Empresa;
+import es.saladillo.nicolas.nng_pr10_fct.data.model.Estudiante;
 
 public class MainActivityViewModel extends ViewModel {
     private long id_empresa_a_editar,id_empresaItem_seleccionada;
     private long id_estudiante_a_editar;
     private long id_visita_a_editar;
+
     private Empresa empresaAsignadaSeleccionada;
     private boolean seHaAsignadoEmpresa = false;
+
+    private Estudiante estudianteVisitadoSeleccionado;
+    private boolean seHaSeleccionadoEstudianteVisitado = false;
 
 
     public MainActivityViewModel() {}
@@ -48,5 +53,21 @@ public class MainActivityViewModel extends ViewModel {
 
     public void setSeHaAsignadoEmpresa(boolean seHaAsignadoEmpresa) {
         this.seHaAsignadoEmpresa = seHaAsignadoEmpresa;
+    }
+
+    public Estudiante getEstudianteVisitadoSeleccionado() {
+        return estudianteVisitadoSeleccionado;
+    }
+
+    public void setEstudianteVisitadoSeleccionado(Estudiante estudianteVisitadoSeleccionado) {
+        this.estudianteVisitadoSeleccionado = estudianteVisitadoSeleccionado;
+    }
+
+    public boolean isSeHaSeleccionadoEstudianteVisitado() {
+        return seHaSeleccionadoEstudianteVisitado;
+    }
+
+    public void setSeHaSeleccionadoEstudianteVisitado(boolean seHaSeleccionadoEstudianteVisitado) {
+        this.seHaSeleccionadoEstudianteVisitado = seHaSeleccionadoEstudianteVisitado;
     }
 }

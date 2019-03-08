@@ -1,24 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.estudiantes.creacion_modif_estudiante.CreacionModifEstudiante">
 
-    <TextView
-        android:id="@+id/lblPrueba"
-        android:layout_width="wrap_content"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEstudianteVisitado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/tilHintEstudianteVisitado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEstudianteVisitado"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="false"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilFecha"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/tilHintFechaVisita"
+        app:layout_constraintEnd_toEndOf="@+id/tilEstudianteVisitado"
+        app:layout_constraintStart_toStartOf="@+id/tilEstudianteVisitado"
+        app:layout_constraintTop_toBottomOf="@+id/tilEstudianteVisitado">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtFecha"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="false"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilHoraInicio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/tilHintHoraInicio"
+        app:layout_constraintEnd_toEndOf="@+id/tilFecha"
+        app:layout_constraintStart_toStartOf="@+id/tilFecha"
+        app:layout_constraintTop_toBottomOf="@+id/tilFecha">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHoraInicio"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="false"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilHoraFin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/tilHintHoraFin"
+        app:layout_constraintEnd_toEndOf="@+id/tilHoraInicio"
+        app:layout_constraintStart_toStartOf="@+id/tilHoraInicio"
+        app:layout_constraintTop_toBottomOf="@+id/tilHoraInicio">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHoraFin"
+            android:layout_width="match_parent"
+            android:focusableInTouchMode="false"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilObservaciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:hint="@string/tilHintObservaciones"
+        app:layout_constraintEnd_toEndOf="@+id/tilHoraFin"
+        app:layout_constraintStart_toStartOf="@+id/tilHoraFin"
+        app:layout_constraintTop_toBottomOf="@+id/tilHoraFin">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtObservaciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnCrearOEditarVisita"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Crear o editar visita"
+        android:layout_marginBottom="96dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Crear o editar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        app:layout_constraintTop_toBottomOf="@+id/tilObservaciones" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

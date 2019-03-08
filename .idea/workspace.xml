@@ -7,30 +7,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="99718409-678d-4298-a516-e004e421527f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModelFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/utils/Utilidades.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NNG-PR10-FCT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/NNG-PR10-FCT.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/Repositorio.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/Repositorio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/RepositorioImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/RepositorioImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Estudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Estudiante.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/local/VisitaDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/local/VisitaDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/Empresas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/Empresas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/Estudiantes.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/Estudiantes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudiante.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudiante.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_estudiante_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_estudiante_fragment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/empresa_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/empresa_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/estudiantes_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/estudiantes_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/Visitas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/Visitas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisita.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisita.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisitaViewModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisitaViewModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_visita_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_visita_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/visitas_fragment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/visitas_fragment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
@@ -51,126 +44,64 @@
     <session id="1511971132">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.31" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="128" />
-          <entry key="xml" value="33" />
+          <entry key="java" value="210" />
+          <entry key="xml" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="128" />
-          <entry key="XML" value="33" />
+          <entry key="JAVA" value="210" />
+          <entry key="XML" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="10" />
-          <entry key="java" value="4927" />
-          <entry key="txt" value="318" />
-          <entry key="xml" value="484" />
+          <entry key="dummy" value="64" />
+          <entry key="java" value="9139" />
+          <entry key="txt" value="331" />
+          <entry key="xml" value="818" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4927" />
-          <entry key="PLAIN_TEXT" value="328" />
-          <entry key="XML" value="484" />
+          <entry key="JAVA" value="9139" />
+          <entry key="PLAIN_TEXT" value="395" />
+          <entry key="XML" value="818" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudiante.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/visita_item.xml">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="534">
-              <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
-              <folding>
-                <element signature="e#350#378#0" expanded="true" />
-                <element signature="e#411#439#0" expanded="true" />
-                <element signature="e#471#499#0" expanded="true" />
-                <element signature="e#529#557#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="android-designer2" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0-alpha04/870733dc7b6530396cd37e2c52808e2a438f1f82/fragment-1.1.0-alpha04-sources.jar!/androidx/fragment/app/Fragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="444">
-              <caret line="2558" selection-start-line="2558" selection-end-line="2558" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0-alpha04/870733dc7b6530396cd37e2c52808e2a438f1f82/fragment-1.1.0-alpha04-sources.jar!/androidx/fragment/app/FragmentManagerImpl.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="199">
-              <caret line="147" selection-start-line="147" selection-end-line="147" />
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
               <folding>
-                <element signature="e#4978#5090#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#983#984#0" expanded="true" />
+                <element signature="e#1031#1032#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Handler.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisitaViewModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="107" selection-start-line="107" selection-end-line="107" />
-              <folding>
-                <element signature="e#34939#34940#0" expanded="true" />
-                <element signature="e#34977#34978#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="167" selection-start-line="167" selection-end-line="167" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasViewModel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="11" column="10" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteAdapter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="461">
-              <caret line="74" selection-start-line="74" selection-end-line="74" />
+            <state relative-caret-position="867">
+              <caret line="65" selection-start-line="65" selection-end-line="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -179,16 +110,38 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModel.java">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisita.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1138#1139#0" expanded="true" />
-                <element signature="e#1188#1189#0" expanded="true" />
-                <element signature="e#1490#1491#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="921">
+              <caret line="156" column="74" selection-start-line="156" selection-start-column="74" selection-end-line="156" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/Visitas.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+          <provider editor-type-id="android-designer2" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Visita.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -198,9 +151,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="layoutResourceFile" />
         <option value="layoutResourceFile_vertical" />
+        <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -209,16 +162,27 @@
       <find>bund</find>
       <find>controller</find>
       <find>item</find>
-      <find>empresa</find>
       <find>ac</find>
       <find>mediat</find>
       <find>btn</find>
       <find>observe</find>
       <find>tarje</find>
       <find>inflater.inflate(R.layout.creacion_modif_estudiante_fragment, container, false)</find>
+      <find>Estudiante</find>
+      <find>Es</find>
+      <find>txtNombreEstudiante</find>
+      <find>empresa</find>
+      <find>nombreEmpresaSeleccionada</find>
+      <find>Empresa</find>
+      <find>listener</find>
+      <find>show</find>
+      <find>showd</find>
+      <find>oncreateV</find>
+      <find>vm</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>Visita</replace>
     </replaceStrings>
     <dirStrings>
       <dir>D:\AndroidStudioProjects\NNG-PR10-FCT\app\src\main\java\es\saladillo\nicolas\nng_pr10_fct</dir>
@@ -230,10 +194,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModelFactory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresaViewModelFactory.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresaViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresa.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModelFactory.java" />
@@ -242,14 +202,10 @@
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/utils/Utilidades.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/Empresas.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/RepositorioImpl.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/Estudiantes.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModelFactory.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Empresa.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Estudiante.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_estudiante_fragment.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteViewModelFactory.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/seleccion_empresa_estudiante_fragment.xml" />
@@ -258,10 +214,37 @@
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudiante.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/seleccion_empresa_estudiante_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasViewModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModel.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudiante.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/visita_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/visitas_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasViewModelFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/NombreYempresaEstudiante.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/InfoDeEstudianteEnVisita.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/local/VisitaDao.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/Repositorio.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/RepositorioImpl.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisitaViewModelFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/seleccion_estudiante_visitado_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/seleccion_estudiante_visitado_item.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitadoViewModelFactory.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitadoAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitadoViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitado.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/base/DatePickerDialogFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/base/TimePickerDialogFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_visita_fragment.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisitaViewModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/Visitas.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/proximas_visitas/ProximasVisitasAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisita.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasViewModel.java" />
       </list>
     </option>
   </component>
@@ -381,6 +364,22 @@
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="base" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+              <item name="local" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -405,25 +404,6 @@
               <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="fragments" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
-              <item name="empresas" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
-              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
-              <item name="ui" type="462c0819:PsiDirectoryNode" />
-              <item name="fragments" type="462c0819:PsiDirectoryNode" />
-              <item name="empresas" type="462c0819:PsiDirectoryNode" />
-              <item name="creacion_modif_empresa" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
@@ -458,6 +438,45 @@
             <path>
               <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="proximas_visitas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="visitas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="visitas" type="462c0819:PsiDirectoryNode" />
+              <item name="creacion_modif_visita" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="nng_pr10_fct" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="fragments" type="462c0819:PsiDirectoryNode" />
+              <item name="visitas" type="462c0819:PsiDirectoryNode" />
+              <item name="creacion_modif_visita" type="462c0819:PsiDirectoryNode" />
+              <item name="seleccionEstudianteVisitado" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
@@ -476,6 +495,12 @@
               <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="menu" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="NNG-PR10-FCT" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="navigation" type="ddeffd01:AndroidResFolderTypeNode" />
             </path>
             <path>
@@ -486,8 +511,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -495,6 +520,11 @@
     <property name="device.picker.selection" value="Nexus_5X_API_28_x86" />
     <property name="last_opened_file_path" value="D:/Descargas/SQLiteDatabaseBrowserPortable/DATOS ROOM" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="es.saladillo.nicolas.nng_pr10_fct.data.base" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -594,7 +624,7 @@
       <window_info id="Image Layers" order="5" />
       <window_info id="Designer" order="6" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.32952183" />
+      <window_info anchor="bottom" id="Run" order="0" visible="true" weight="0.32848233" />
       <window_info anchor="bottom" id="Logcat" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.32952183" />
@@ -615,308 +645,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisita.java</url>
+          <line>169</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModelFactory.java" />
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_empresa_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="135" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/Repositorio.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-manifest" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasViewModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/EmpresasAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="710">
-          <caret line="82" column="12" selection-start-line="82" selection-start-column="12" selection-end-line="82" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/empresas_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="40" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel/2.1.0-alpha02/5d86e5a1ba6a7446026291e9105b360252d0c852/lifecycle-viewmodel-2.1.0-alpha02-sources.jar!/androidx/lifecycle/ViewModelProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="146" selection-start-line="146" selection-end-line="146" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apt/debug/es/saladillo/nicolas/nng_pr10_fct/data/local/EstudianteDao_Impl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="42" selection-start-line="28" selection-start-column="42" selection-end-line="28" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#945#946#0" expanded="true" />
-            <element signature="e#984#985#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/utils/Utilidades.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresaViewModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="49" lean-forward="true" selection-start-line="8" selection-start-column="49" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#653#683#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.1.0-alpha02/5411028b44e34d8adc95797fe7f6e05d322ebe83/lifecycle-livedata-core-2.1.0-alpha02-sources.jar!/androidx/lifecycle/MutableLiveData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="24" column="44" selection-start-line="24" selection-start-column="44" selection-end-line="24" selection-end-column="44" />
-          <folding>
-            <element signature="e#1208#1209#0" expanded="true" />
-            <element signature="e#1231#1232#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.1.0-alpha02/5411028b44e34d8adc95797fe7f6e05d322ebe83/lifecycle-livedata-core-2.1.0-alpha02-sources.jar!/androidx/lifecycle/LiveData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="172" column="55" selection-start-line="172" selection-start-column="48" selection-end-line="172" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="56" column="15" selection-start-line="56" selection-start-column="15" selection-end-line="56" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Empresa.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="595">
-          <caret line="39" column="11" selection-start-line="39" selection-start-column="11" selection-end-line="39" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/creacion_modif_empresa/CreacionModifEmpresaViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="34" column="24" lean-forward="true" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#696#697#0" expanded="true" />
-            <element signature="e#746#747#0" expanded="true" />
-            <element signature="e#792#793#0" expanded="true" />
-            <element signature="e#842#843#0" expanded="true" />
-            <element signature="e#1180#1181#0" expanded="true" />
-            <element signature="e#1222#1223#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Estudiante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="51" column="11" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/RepositorioImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="100" column="52" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml">
-      <provider editor-type-id="text-editor" />
-      <provider selected="true" editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_estudiante_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="533">
-          <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="44" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1331#1332#0" expanded="true" />
-            <element signature="e#1376#1377#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="21" column="30" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteViewModelFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="39" selection-start-line="39" selection-end-line="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/estudiantes_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="4" lean-forward="true" selection-start-line="18" selection-start-column="4" selection-end-line="27" selection-end-column="52" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/Estudiantes.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="33" column="4" lean-forward="true" selection-start-line="33" selection-start-column="4" selection-end-line="36" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/empresa_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="58" lean-forward="true" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudiante.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="52" column="37" selection-start-line="52" selection-start-column="37" selection-end-line="52" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#967#968#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/empresas/Empresas.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="62" column="63" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/seleccion_empresa_estudiante_item.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="60" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="60" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/seleccion_empresa_estudiante_fragment.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="44" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer2" />
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/view/View.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="199">
@@ -934,43 +675,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="44" column="44" selection-start-line="44" selection-start-column="44" selection-end-line="44" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1138#1139#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1490#1491#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="461">
-          <caret line="74" selection-start-line="74" selection-end-line="74" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0-alpha04/870733dc7b6530396cd37e2c52808e2a438f1f82/fragment-1.1.0-alpha04-sources.jar!/androidx/fragment/app/Fragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="444">
           <caret line="2558" selection-start-line="2558" selection-end-line="2558" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0-alpha04/870733dc7b6530396cd37e2c52808e2a438f1f82/fragment-1.1.0-alpha04-sources.jar!/androidx/fragment/app/FragmentManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="147" selection-start-line="147" selection-end-line="147" />
-          <folding>
-            <element signature="e#4978#5090#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -985,41 +693,438 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.fragment/fragment/1.1.0-alpha04/870733dc7b6530396cd37e2c52808e2a438f1f82/fragment-1.1.0-alpha04-sources.jar!/androidx/fragment/app/FragmentManagerImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="167" selection-start-line="167" selection-end-line="167" />
+        <state relative-caret-position="199">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/estudiantes_fragment.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModelFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="21" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasViewModelFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#569#599#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="45" column="4" lean-forward="true" selection-start-line="45" selection-start-column="4" selection-end-line="51" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1542#1543#0" expanded="true" />
+            <element signature="e#1588#1589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/EstudiantesViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/Estudiantes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="63" column="4" selection-start-line="63" selection-start-column="4" selection-end-line="94" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/InfoTarjetaVisita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#335#336#0" expanded="true" />
+            <element signature="e#369#370#0" expanded="true" />
+            <element signature="e#397#398#0" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#368#369#0" expanded="true" />
+            <element signature="e#404#405#0" expanded="true" />
+            <element signature="e#438#439#0" expanded="true" />
+            <element signature="e#468#469#0" expanded="true" />
+            <element signature="e#514#515#0" expanded="true" />
+            <element signature="e#552#553#0" expanded="true" />
+            <element signature="e#580#581#0" expanded="true" />
+            <element signature="e#606#607#0" expanded="true" />
+            <element signature="e#642#643#0" expanded="true" />
+            <element signature="e#672#673#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#742#743#0" expanded="true" />
+            <element signature="e#794#795#0" expanded="true" />
+            <element signature="e#838#839#0" expanded="true" />
+            <element signature="e#872#873#0" expanded="true" />
+            <element signature="e#902#903#0" expanded="true" />
+            <element signature="e#948#949#0" expanded="true" />
+            <element signature="e#986#987#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/visitas_fragment.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="48" selection-start-line="23" selection-start-column="48" selection-end-line="23" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModelFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="52" lean-forward="true" selection-start-line="8" selection-start-column="52" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/activity/MainActivityViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="57" column="59" selection-start-line="57" selection-start-column="59" selection-end-line="57" selection-end-column="59" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1448#1449#0" expanded="true" />
+            <element signature="e#1490#1491#0" expanded="true" />
+            <element signature="e#1926#1927#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/navigation/main_navigation.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Estudiante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+          <folding>
+            <element signature="e#2796#2797#0" expanded="true" />
+            <element signature="e#2835#2836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/local/VisitaDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="35" column="4" selection-start-line="35" selection-start-column="4" selection-end-line="35" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_estudiante_fragment.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="95" column="1" lean-forward="true" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="48" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudiante.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="60" lean-forward="true" selection-start-line="60" selection-end-line="60" />
+        <state relative-caret-position="645">
+          <caret line="140" column="63" selection-start-line="140" selection-start-column="63" selection-end-line="140" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitadoViewModelFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#673#703#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/seleccion_estudiante_visitado_fragment.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="61" selection-start-line="22" selection-start-column="61" selection-end-line="22" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/seleccion_empresa_estudiante_fragment.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="29" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="81" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudianteViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="12" column="4" lean-forward="true" selection-start-line="12" selection-start-column="4" selection-end-line="31" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#967#968#0" expanded="true" />
+            <element signature="e#1010#1011#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.recyclerview/recyclerview/1.0.0/2151d26c3b241f0a887f2dadb9ab091649fcf020/recyclerview-1.0.0-sources.jar!/androidx/recyclerview/widget/ListAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="383">
+          <caret line="117" column="16" selection-start-line="117" selection-start-column="16" selection-end-line="117" selection-end-column="16" />
+          <folding>
+            <element signature="e#4843#4844#0" expanded="true" />
+            <element signature="e#4883#4884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/seleccionEmpresaEstudiante/SeleccionEmpresaEstudiante.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="33" column="41" selection-start-line="29" selection-start-column="4" selection-end-line="33" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitadoAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1145">
+          <caret line="79" column="40" selection-start-line="79" selection-start-column="40" selection-end-line="79" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitadoViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="28" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/base/DatePickerDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="69" column="33" selection-start-line="69" selection-start-column="16" selection-end-line="69" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/base/TimePickerDialogFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-677" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/creacion_modif_visita_fragment.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="80" column="48" selection-start-line="80" selection-start-column="48" selection-end-line="80" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/seleccionEstudianteVisitado/SeleccionEstudianteVisitado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/estudiantes/creacion_modif_estudiante/CreacionModifEstudianteViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1331#1332#0" expanded="true" />
+            <element signature="e#1376#1377#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/visita_item.xml">
+      <provider selected="true" editor-type-id="android-designer2" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1343">
+          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-livedata-core/2.1.0-alpha02/5411028b44e34d8adc95797fe7f6e05d322ebe83/lifecycle-livedata-core-2.1.0-alpha02-sources.jar!/androidx/lifecycle/Observer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="30" column="9" selection-start-line="30" selection-start-column="9" selection-end-line="30" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/estudiante_item.xml">
+      <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" selection-end-line="57" selection-end-column="36" />
+          <caret selection-end-line="57" selection-end-column="36" />
         </state>
       </provider>
-      <provider editor-type-id="android-designer2" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/visita_item.xml">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="534">
-          <caret line="79" column="36" selection-start-line="79" selection-start-column="36" selection-end-line="79" selection-end-column="36" />
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/seleccion_estudiante_visitado_item.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="36" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/seleccion_empresa_estudiante_item.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="28" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/proximas_visitas/ProximasVisitasAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-732">
+          <caret line="24" column="97" selection-start-line="24" selection-start-column="97" selection-end-line="24" selection-end-column="97" />
           <folding>
-            <element signature="e#350#378#0" expanded="true" />
-            <element signature="e#411#439#0" expanded="true" />
-            <element signature="e#471#499#0" expanded="true" />
-            <element signature="e#529#557#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-      <provider selected="true" editor-type-id="android-designer2" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="25" column="41" selection-start-line="25" selection-start-column="41" selection-end-line="25" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/Repositorio.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="56" column="21" selection-start-line="56" selection-start-column="21" selection-end-line="56" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisitaViewModelFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="21" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/RepositorioImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="841">
+          <caret line="252" column="54" selection-start-line="252" selection-start-column="54" selection-end-line="252" selection-end-column="54" />
+          <folding>
+            <element signature="e#8243#8244#0" expanded="true" />
+            <element signature="e#8270#8271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisitaViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="65" selection-start-line="65" selection-end-line="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/data/model/Visita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Android/Sdk/sources/android-28/android/os/Looper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="196" selection-start-line="196" selection-end-line="196" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/creacion_modif_visita/CreacionModifVisita.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="921">
+          <caret line="156" column="74" selection-start-line="156" selection-start-column="74" selection-end-line="156" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/Visitas.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="79" column="33" lean-forward="true" selection-start-line="79" selection-start-column="33" selection-end-line="79" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/es/saladillo/nicolas/nng_pr10_fct/ui/fragments/visitas/VisitasViewModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#983#984#0" expanded="true" />
+            <element signature="e#1031#1032#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
   </component>
 </project>

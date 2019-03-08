@@ -29,6 +29,15 @@
                             <option name="y" value="322" />
                           </Point>
                         </option>
+                        <option name="myPositions">
+                          <map>
+                            <entry key="action_creacionModifVisita_to_seleccionEstudianteVisitado">
+                              <value>
+                                <LayoutPositions />
+                              </value>
+                            </entry>
+                          </map>
+                        </option>
                       </LayoutPositions>
                     </value>
                   </entry>
@@ -147,6 +156,18 @@
                           <Point>
                             <option name="x" value="1302" />
                             <option name="y" value="13" />
+                          </Point>
+                        </option>
+                      </LayoutPositions>
+                    </value>
+                  </entry>
+                  <entry key="destSeleccionEstudianteVisitado">
+                    <value>
+                      <LayoutPositions>
+                        <option name="myPosition">
+                          <Point>
+                            <option name="x" value="864" />
+                            <option name="y" value="369" />
                           </Point>
                         </option>
                       </LayoutPositions>
