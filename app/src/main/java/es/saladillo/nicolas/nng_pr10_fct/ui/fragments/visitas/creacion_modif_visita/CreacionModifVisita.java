@@ -134,13 +134,10 @@ public class CreacionModifVisita extends Fragment implements DatePickerDialog.On
     }
 
     private boolean comprobarDatos() {
-        if(txtEstudianteVisitado.getText().toString().isEmpty() ||
-                txtFecha.getText().toString().isEmpty() ||
-                txtHoraInicio.getText().toString().isEmpty() ||
-                txtObservaciones.getText().toString().isEmpty()){
-            return false;
-        }
-        return true;
+        return !txtEstudianteVisitado.getText().toString().isEmpty() &&
+                !txtFecha.getText().toString().isEmpty() &&
+                !txtHoraInicio.getText().toString().isEmpty() &&
+                !txtObservaciones.getText().toString().isEmpty();
     }
 
     private void terminarCreacion_o_Actualizacion() {

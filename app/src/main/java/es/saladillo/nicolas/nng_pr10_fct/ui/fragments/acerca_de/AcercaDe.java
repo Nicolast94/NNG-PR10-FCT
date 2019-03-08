@@ -16,11 +16,6 @@ import es.saladillo.nicolas.nng_pr10_fct.R;
 
 public class AcercaDe extends Fragment {
 
-    private AcercaDeViewModel mViewModel;
-
-    public static AcercaDe newInstance() {
-        return new AcercaDe();
-    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -31,8 +26,7 @@ public class AcercaDe extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        mViewModel = ViewModelProviders.of(this).get(AcercaDeViewModel.class);
-        // TODO: Use the ViewModel
+        AcercaDeViewModel mViewModel = ViewModelProviders.of(this).get(AcercaDeViewModel.class);
     }
 
 }
