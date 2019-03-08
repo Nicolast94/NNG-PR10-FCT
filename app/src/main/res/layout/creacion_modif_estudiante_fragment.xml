@@ -1,24 +1,222 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.fragments.estudiantes.creacion_modif_estudiante.CreacionModifEstudiante">
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilNombreEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:hint="@string/tilHintNombreEstudiante"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtNombreEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTelefonoEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/tilHintTelefonoEstudiante"
+        app:layout_constraintStart_toStartOf="@+id/tilNombreEstudiante"
+        app:layout_constraintTop_toBottomOf="@+id/tilNombreEstudiante">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTelefonoEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilCicloFormativoEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="@string/tilHintCicloFormativoEstudiante"
+        app:layout_constraintBottom_toBottomOf="@+id/tilTelefonoEstudiante"
+        app:layout_constraintEnd_toEndOf="@+id/tilNombreEstudiante"
+        app:layout_constraintStart_toEndOf="@+id/tilTelefonoEstudiante">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtCicloFormativoEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmailEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/tilHintEmailEstudiante"
+        app:layout_constraintEnd_toEndOf="@+id/tilNombreEstudiante"
+        app:layout_constraintStart_toStartOf="@+id/tilTelefonoEstudiante"
+        app:layout_constraintTop_toBottomOf="@+id/tilTelefonoEstudiante">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmailEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilEmpresaAsignadaEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/tilHintEmpresaAsignadaEstudiante"
+        app:layout_constraintEnd_toEndOf="@+id/tilNombreEstudiante"
+        app:layout_constraintStart_toStartOf="@+id/tilEmailEstudiante"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmailEstudiante">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtEmpresaAsignadaEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="false"
+            android:inputType="none"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTutorEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/tilHintTutorEstudiante"
+        app:layout_constraintStart_toStartOf="@+id/tilEmpresaAsignadaEstudiante"
+        app:layout_constraintTop_toBottomOf="@+id/tilEmpresaAsignadaEstudiante">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTutorEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilTelefonoTutorEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="@string/tilHintTelefonoTutorEstudiante"
+        app:layout_constraintBottom_toBottomOf="@+id/tilTutorEstudiante"
+        app:layout_constraintEnd_toEndOf="@+id/tilEmpresaAsignadaEstudiante"
+        app:layout_constraintStart_toEndOf="@+id/tilTutorEstudiante">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtTelefonoTutorEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilHoraInicialEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="@string/tilHintHoraInicioEstudiante"
+        app:layout_constraintEnd_toEndOf="@+id/tilTutorEstudiante"
+        app:layout_constraintStart_toEndOf="@+id/lblDeTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblHorarioTitle">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHoraInicialEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilHoraFinEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:hint="@string/tilHintHoraFinEstudiante"
+        app:layout_constraintBottom_toBottomOf="@+id/tilHoraInicialEstudiante"
+        app:layout_constraintEnd_toEndOf="@+id/tilTelefonoTutorEstudiante"
+        app:layout_constraintStart_toEndOf="@+id/lblDeTitle2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtHoraFinEstudiante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="time" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnCrearOEditarEstudiante"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/colorPrimary"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Crear o editar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <TextView
-        android:id="@+id/lblPrueba"
+        android:id="@+id/lblHorarioTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Horario"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
+        app:layout_constraintStart_toStartOf="@+id/tilTutorEstudiante"
+        app:layout_constraintTop_toBottomOf="@+id/tilTutorEstudiante" />
+
+    <TextView
+        android:id="@+id/lblDeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="De"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/tilHoraInicialEstudiante"
+        app:layout_constraintStart_toStartOf="@+id/lblHorarioTitle"
+        app:layout_constraintTop_toBottomOf="@+id/lblHorarioTitle" />
+
+    <TextView
+        android:id="@+id/lblDeTitle2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Crear o editar estudiante"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.375" />
+        android:text="a"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
+        app:layout_constraintBottom_toBottomOf="@+id/lblDeTitle"
+        app:layout_constraintStart_toEndOf="@+id/tilHoraInicialEstudiante" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

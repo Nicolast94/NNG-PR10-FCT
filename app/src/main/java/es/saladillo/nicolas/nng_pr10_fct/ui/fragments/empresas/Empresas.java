@@ -30,6 +30,7 @@ import es.saladillo.nicolas.nng_pr10_fct.data.local.EmpresaDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.local.EstudianteDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.local.VisitaDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.model.Empresa;
+import es.saladillo.nicolas.nng_pr10_fct.utils.Utilidades;
 
 public class Empresas extends Fragment {
 
@@ -48,11 +49,7 @@ public class Empresas extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        EstudianteDao estudianteDao = AppDatabase.getInstance(requireContext()).estudianteDao();
-        VisitaDao visitaDao = AppDatabase.getInstance(requireContext()).visitaDao();
-        EmpresaDao empresaDao = AppDatabase.getInstance(requireContext()).empresaDao();
-        repositorio = new RepositorioImpl(estudianteDao, visitaDao, empresaDao);
-        vm = ViewModelProviders.of(this, new EmpresasViewModelFactory(repositorio)).get(EmpresasViewModel.class);
+        vm = ViewModelProviders.of(this, new EmpresasViewModelFactory(Utilidades.obtenerRepositorioBD(getContext()))).get(EmpresasViewModel.class);
         setupViews();
     }
 

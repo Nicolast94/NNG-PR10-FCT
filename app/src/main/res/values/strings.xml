@@ -12,4 +12,18 @@
     <string name="hitnTxtPersonaContactoEmpresa">Persona de contacto</string>
     <string name="btnCreacion_Text">Crear</string>
     <string name="lblSinEmpresas">Añadir empresa</string>
+    <string name="tilHintNombreEstudiante">Nombre</string>
+    <string name="btnCrear_texto">Crear empresa</string>
+    <string name="btnActualizar_texto">Actualizar empresa</string>
+    <string name="tilHintTelefonoEstudiante">Telefono</string>
+    <string name="tilHintCicloFormativoEstudiante">Ciclo Formativo</string>
+    <string name="tilHintEmailEstudiante">Email</string>
+    <string name="tilHintEmpresaAsignadaEstudiante">Empresa Asignada</string>
+    <string name="tilHintTutorEstudiante">Tutor</string>
+    <string name="tilHintHoraInicioEstudiante">Hora de inicio</string>
+    <string name="tilHintHoraFinEstudiante">Hora de fin</string>
+    <string name="tilHintTelefonoTutorEstudiante">Telefono tutor</string>
+    <string name="btnCrearEstudianteText">Crear estudiante</string>
+    <string name="btnActualizarEstudianteText">Actualizar estudiante</string>
+    <string name="lblSinEmpresasParaSeleccionar">No hay empresas</string>
 </resources>

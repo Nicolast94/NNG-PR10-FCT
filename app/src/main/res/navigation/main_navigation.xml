@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/destProximasVisitasFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.proximas_visitas.ProximasVisitas"
-        android:label="ProximasVisitasFragment"
+        android:label="Proximas Visitas"
         tools:layout="@layout/proximas_visitas_fragment">
         <action
             android:id="@+id/actionProximasVisitasToCrearModifVisita"
@@ -17,13 +17,13 @@
     <fragment
         android:id="@+id/destAcercaDeFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.acerca_de.AcercaDe"
-        android:label="AcercaDeFragment"
+        android:label="Acerca de"
         tools:layout="@layout/acerca_de_fragment" />
     <fragment
         android:id="@+id/destEmpresasFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.Empresas"
-        android:label="EmpresasFragment"
-        tools:layout="@layout/empresas_fragment" >
+        android:label="Empresas"
+        tools:layout="@layout/empresas_fragment">
         <action
             android:id="@+id/actionEmpresasToCreacionModifEmpresa"
             app:destination="@id/creacionModifEmpresa" />
@@ -31,8 +31,8 @@
     <fragment
         android:id="@+id/destEstudiantesFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.Estudiantes"
-        android:label="EstudiantesFragment"
-        tools:layout="@layout/estudiantes_fragment" >
+        android:label="Estudiantes"
+        tools:layout="@layout/estudiantes_fragment">
         <action
             android:id="@+id/actionEstudianteToCreacionModifEstudiante"
             app:destination="@id/destCreacionModifEstudiante" />
@@ -40,8 +40,8 @@
     <fragment
         android:id="@+id/destVisitasFragment"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.visitas.Visitas"
-        android:label="VisitasFragment"
-        tools:layout="@layout/visitas_fragment" >
+        android:label="Visitas"
+        tools:layout="@layout/visitas_fragment">
         <action
             android:id="@+id/actionVisitasToCreacionModifVisita"
             app:destination="@id/creacionModifVisita" />
@@ -50,11 +50,19 @@
         android:id="@+id/destCreacionModifEstudiante"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.creacion_modif_estudiante.CreacionModifEstudiante"
         android:label="CreacionModifEstudiante"
-        tools:layout="@layout/creacion_modif_estudiante_fragment" />
+        tools:layout="@layout/creacion_modif_estudiante_fragment" >
+        <argument
+            android:name="idEstudiante"
+            app:argType="long"
+            android:defaultValue="0L" />
+        <action
+            android:id="@+id/actionCreacionModifEstudianteToSeleccionEmpresa"
+            app:destination="@id/destSeleccionEmpresa" />
+    </fragment>
     <fragment
         android:id="@+id/creacionModifEmpresa"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.creacion_modif_empresa.CreacionModifEmpresa"
-        android:label="CreacionModifEmpresa" >
+        android:label="Creacion Empresa">
         <argument
             android:name="idEmpresa"
             android:defaultValue="0L"
@@ -68,4 +76,9 @@
         android:id="@+id/destPreferencias"
         android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.preferencias.Preferencias"
         android:label="Preferencias" />
+    <fragment
+        android:id="@+id/destSeleccionEmpresa"
+        android:name="es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.creacion_modif_estudiante.seleccionEmpresaEstudiante.SeleccionEmpresaEstudiante"
+        android:label="Seleccion de empresa"
+        tools:layout="@layout/seleccion_empresa_estudiante_fragment" />
 </navigation>

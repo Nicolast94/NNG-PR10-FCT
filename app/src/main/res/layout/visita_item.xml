@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/standardSpacing_8dp"
+    android:layout_marginBottom="@dimen/standardSpacing_8dp"
+    android:layout_marginStart="@dimen/standardSpacing_8dp"
+    android:layout_marginEnd="@dimen/standardSpacing_8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+
+
+        <TextView
+            android:id="@+id/lblNombreEstudianteVisita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Nombre"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
+            app:layout_constraintStart_toEndOf="@+id/lblDia"
+            app:layout_constraintTop_toTopOf="@+id/lblDia" />
+
+        <TextView
+            android:id="@+id/lblEmpresaEstudianteVisita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Empresa"
+            app:layout_constraintStart_toStartOf="@+id/lblNombreEstudianteVisita"
+            app:layout_constraintTop_toBottomOf="@+id/lblNombreEstudianteVisita" />
+
+        <TextView
+            android:id="@+id/lblDia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Dia"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/lblMes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:text="Mes"
+            app:layout_constraintEnd_toEndOf="@+id/lblDia"
+            app:layout_constraintTop_toBottomOf="@+id/lblDia" />
+
+        <TextView
+            android:id="@+id/lblAnio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Año"
+            app:layout_constraintBottom_toBottomOf="@+id/lblMes"
+            app:layout_constraintStart_toEndOf="@+id/lblMes" />
+
+        <TextView
+            android:id="@+id/lblHoraInicioYfin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="HoraInicioYFin"
+            app:layout_constraintBottom_toBottomOf="@+id/lblEmpresaEstudianteVisita"
+            app:layout_constraintStart_toEndOf="@+id/lblEmpresaEstudianteVisita" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

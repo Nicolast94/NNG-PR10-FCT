@@ -5,16 +5,12 @@ import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.core.view.ViewCompat;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
-import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.DiffUtil;
 import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
@@ -66,8 +62,8 @@ public class EmpresasAdapter extends ListAdapter<Empresa, EmpresasAdapter.ViewHo
 
         ViewHolder(View itemView) {
             super(itemView);
-            lblNombre = ViewCompat.requireViewById(itemView, R.id.lblNombreEmpresa);
-            lblPersonaContacto = ViewCompat.requireViewById(itemView, R.id.lblPersonaContacto);
+            lblNombre = ViewCompat.requireViewById(itemView, R.id.lblNombreEstudianteVisita);
+            lblPersonaContacto = ViewCompat.requireViewById(itemView, R.id.lblEmpresaEstudianteVisita);
             lblTelefono = ViewCompat.requireViewById(itemView, R.id.lblTelefono);
             itemView.setOnClickListener(v -> navegarAempresa(v));
         }

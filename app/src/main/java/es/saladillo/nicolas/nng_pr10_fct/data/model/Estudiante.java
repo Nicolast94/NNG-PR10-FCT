@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.ForeignKey;
+import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
@@ -15,6 +16,7 @@ public class Estudiante {
     @ColumnInfo(name = "id")
     private long id;
     @ColumnInfo(name = "id_empresaAsignada")
+    @NonNull
     private long id_empresaAsignada;
     @ColumnInfo(name = "nombre")
     private String nombre;
@@ -47,7 +49,12 @@ public class Estudiante {
         this.horario = horario;
     }
 
-
+    @Ignore
+    public Estudiante(long id, long id_empresaAsignada, @NonNull String empresa_asignada) {
+        this.id = id;
+        this.id_empresaAsignada = id_empresaAsignada;
+        this.empresa_asignada = empresa_asignada;
+    }
 
     public String getNombre() {
         return nombre;

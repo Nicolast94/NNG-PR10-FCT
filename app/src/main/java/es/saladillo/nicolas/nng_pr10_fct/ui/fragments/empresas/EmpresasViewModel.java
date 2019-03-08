@@ -11,6 +11,7 @@ public class EmpresasViewModel extends ViewModel {
     private final Repositorio repositorio;
     public LiveData<List<Empresa>> todasLasEmpresas;
 
+
     public EmpresasViewModel(Repositorio repositorio) {
         this.repositorio = repositorio;
         todasLasEmpresas = repositorio.consultarCadaEmpresa();

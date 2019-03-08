@@ -19,6 +19,9 @@ import es.saladillo.nicolas.nng_pr10_fct.data.local.EstudianteDao;
 import es.saladillo.nicolas.nng_pr10_fct.data.local.VisitaDao;
 import es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.EmpresasViewModel;
 import es.saladillo.nicolas.nng_pr10_fct.ui.fragments.empresas.EmpresasViewModelFactory;
+import es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.creacion_modif_estudiante.seleccionEmpresaEstudiante.SeleccionEmpresaEstudianteViewModel;
+import es.saladillo.nicolas.nng_pr10_fct.ui.fragments.estudiantes.creacion_modif_estudiante.seleccionEmpresaEstudiante.SeleccionEmpresaEstudianteViewModelFactory;
+import es.saladillo.nicolas.nng_pr10_fct.utils.Utilidades;
 
 import android.os.Bundle;
 
@@ -28,11 +31,14 @@ public class MainActivity extends AppCompatActivity {
 
     private NavController navController;
     DrawerLayout drawerLayout;
+    private MainActivityViewModel vm;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        vm = ViewModelProviders.of(this).get(MainActivityViewModel.class);
+
         navController = Navigation.findNavController(this, R.id.navHostFragment);
         setupToolbar();
         setupNavigationDrawer();

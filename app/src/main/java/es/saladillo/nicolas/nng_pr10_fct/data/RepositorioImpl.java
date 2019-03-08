@@ -102,31 +102,67 @@ public class RepositorioImpl implements Repositorio {
         return empresaDao.consultarInfoBasicaEmpresas();
     }
 
-    //Metodos estudiante
 
+    //Metodos estudiante
     @Override
     public LiveData<List<Estudiante>> consultarCadaEstudiante() {
-        return null;
+        return estudianteDao.consultarCadaEstudiante();
     }
 
     @Override
-    public LiveData<Resource<Long>> insertEstudiante(Estudiante student) {
-        return null;
+    public LiveData<Resource<Long>> insertEstudiante(Estudiante estudiante) {
+        MutableLiveData<Resource<Long>> result = new MutableLiveData<>();
+        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> estudianteDao.insert(estudiante));
+//        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
+//
+//            result.postValue(Resource.loading());
+//            try {
+//                long updated = estudianteDao.insert(estudiante);
+//                result.postValue(Resource.success(updated));
+//            } catch (Exception e) {
+//                result.postValue(Resource.error(e));
+//            }
+//        });
+        return result;
     }
 
     @Override
-    public LiveData<Resource<Integer>> updateEstudiante(Estudiante student) {
-        return null;
+    public LiveData<Resource<Integer>> updateEstudiante(Estudiante estudiante) {
+        MutableLiveData<Resource<Integer>> result = new MutableLiveData<>();
+
+        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
+
+            result.postValue(Resource.loading());
+            try {
+                int updated = estudianteDao.update(estudiante);
+                result.postValue(Resource.success(updated));
+            } catch (Exception e) {
+                result.postValue(Resource.error(e));
+            }
+        });
+        return result;
     }
 
     @Override
-    public LiveData<Resource<Integer>> deleteEstudiante(Estudiante student) {
-        return null;
+    public LiveData<Resource<Integer>> deleteEstudiante(Estudiante estudiante) {
+        MutableLiveData<Resource<Integer>> result = new MutableLiveData<>();
+
+        AsyncTask.THREAD_POOL_EXECUTOR.execute(() -> {
+
+            result.postValue(Resource.loading());
+            try {
+                int updated = estudianteDao.delete(estudiante);
+                result.postValue(Resource.success(updated));
+            } catch (Exception e) {
+                result.postValue(Resource.error(e));
+            }
+        });
+        return result;
     }
 
     @Override
     public LiveData<Estudiante> consultarEstudiante(long idEstudiante) {
-        return null;
+        return estudianteDao.consultarEstudiante(idEstudiante);
     }
 
     @Override

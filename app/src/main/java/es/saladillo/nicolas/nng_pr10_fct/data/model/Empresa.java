@@ -2,6 +2,7 @@ package es.saladillo.nicolas.nng_pr10_fct.data.model;
 
 import androidx.room.ColumnInfo;
 import androidx.room.Entity;
+import androidx.room.Ignore;
 import androidx.room.Index;
 import androidx.room.PrimaryKey;
 
@@ -34,6 +35,10 @@ public class Empresa {
         this.email = email;
         this.logo = logo;
         this.nombre_contacto = nombre_contacto;
+    }
+
+    @Ignore
+    public Empresa() {
     }
 
     public void setId(long id) {

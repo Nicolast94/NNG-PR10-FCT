@@ -18,6 +18,8 @@ import android.widget.Toast;
 
 import java.util.Objects;
 
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
 import es.saladillo.nicolas.nng_pr10_fct.R;
 import es.saladillo.nicolas.nng_pr10_fct.data.RepositorioImpl;
 import es.saladillo.nicolas.nng_pr10_fct.data.local.AppDatabase;
@@ -32,8 +34,9 @@ public class CreacionModifEmpresa extends Fragment {
 
     private CreacionModifEmpresaViewModel vm;
     private RepositorioImpl repositorio;
-    private EditText txtNombreEmpresa,txtDireccionEmpresa,txtTelefonoEmpresa,txtCifEmpresa,txtEmailEmpresa,txtPersonaContactoEmpresa;
+    private EditText txtNombreEmpresa, txtDireccionEmpresa, txtTelefonoEmpresa, txtCifEmpresa, txtEmailEmpresa, txtPersonaContactoEmpresa;
     private Button btnCrearOEditar;
+    private NavController navController;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
@@ -50,7 +53,7 @@ public class CreacionModifEmpresa extends Fragment {
         repositorio = new RepositorioImpl(estudianteDao, visitaDao, empresaDao);
         vm = ViewModelProviders.of(this, new CreacionModifEmpresaViewModelFactory(repositorio)).get(CreacionModifEmpresaViewModel.class);
         vm.setEmpresaId(getArguments().getLong("idEmpresa"));
-        if(vm.getEmpresaId() > 0){
+        if (vm.getEmpresaId() > 0) {
             vm.obtenerEmpresaSeleccionada();
         }
 
@@ -58,28 +61,34 @@ public class CreacionModifEmpresa extends Fragment {
     }
 
     private void setupViews() {
-        txtNombreEmpresa = ViewCompat.requireViewById(getView(),R.id.txtNombreEmpresa);
-        txtDireccionEmpresa = ViewCompat.requireViewById(getView(),R.id.txtDireccionEmpresa);
-        txtTelefonoEmpresa = ViewCompat.requireViewById(getView(),R.id.txtTelefonoEmpresa);
-        txtCifEmpresa = ViewCompat.requireViewById(getView(),R.id.txtCifEmpresa);
-        txtEmailEmpresa = ViewCompat.requireViewById(getView(),R.id.txtEmailEmpresa);
-        txtPersonaContactoEmpresa = ViewCompat.requireViewById(getView(),R.id.txtPersonaContactoEmpresa);
-        btnCrearOEditar = ViewCompat.requireViewById(getView(),R.id.btnCrearOEditar);
+        txtNombreEmpresa = ViewCompat.requireViewById(getView(), R.id.txtNombreEmpresa);
+        txtDireccionEmpresa = ViewCompat.requireViewById(getView(), R.id.txtDireccionEmpresa);
+        txtTelefonoEmpresa = ViewCompat.requireViewById(getView(), R.id.txtTelefonoEmpresa);
+        txtCifEmpresa = ViewCompat.requireViewById(getView(), R.id.txtCifEmpresa);
+        txtEmailEmpresa = ViewCompat.requireViewById(getView(), R.id.txtEmailEmpresa);
+        txtPersonaContactoEmpresa = ViewCompat.requireViewById(getView(), R.id.txtPersonaContactoEmpresa);
+        btnCrearOEditar = ViewCompat.requireViewById(getView(), R.id.btnCrearOEditar);
+        navController = Navigation.findNavController(getView());
 
-        if(vm.getEmpresaId() == 0){
-            btnCrearOEditar.setText("Crear empresa");
-            btnCrearOEditar.setOnClickListener(v -> vm.insertarEmpresa(obtenerDatosIntroducidos()));
-        }else{
-            btnCrearOEditar.setText("Actualizar empresa");
-            btnCrearOEditar.setOnClickListener(v -> vm.actualizarEmpresa(obtenerDatosIntroducidos()));
+        if (vm.getEmpresaId() == 0) {
+            btnCrearOEditar.setText(getString(R.string.btnCrear_texto));
+            btnCrearOEditar.setOnClickListener(v -> {
+                vm.insertarEmpresa(obtenerDatosIntroducidos());
+                navController.navigateUp();
+            });
+        } else {
+            btnCrearOEditar.setText(getString(R.string.btnActualizar_texto));
+            btnCrearOEditar.setOnClickListener(v -> {
+                vm.actualizarEmpresa(obtenerDatosIntroducidos());
+                navController.navigateUp();
+            });
         }
 
         vm.getEmpresaSeleccionada().observe(Objects.requireNonNull(getActivity()), this::mostrarDatosEmpresa);
     }
 
     private Empresa obtenerDatosIntroducidos() {
-        String nombreEmpresa,cif,direccionSede,telefono,email,nombreContacto;
-        long id;
+        String nombreEmpresa, cif, direccionSede, telefono, email, nombreContacto;
 
         nombreEmpresa = txtNombreEmpresa.getText().toString();
         cif = txtCifEmpresa.getText().toString();
@@ -88,7 +97,7 @@ public class CreacionModifEmpresa extends Fragment {
         email = txtEmailEmpresa.getText().toString();
         nombreContacto = txtPersonaContactoEmpresa.getText().toString();
 
-        return new Empresa(vm.getEmpresaId(),nombreEmpresa,cif,direccionSede,telefono,email,"",nombreContacto);
+        return new Empresa(vm.getEmpresaId(), nombreEmpresa, cif, direccionSede, telefono, email, "", nombreContacto);
     }
 
     private void mostrarDatosEmpresa(Empresa empresa) {

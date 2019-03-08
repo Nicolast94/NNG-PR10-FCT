@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
-            android:text="Empresa"
+            android:text="Nombre"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle2"
             app:layout_constraintStart_toEndOf="@+id/imgAvatar"
             app:layout_constraintTop_toTopOf="@+id/imgAvatar" />
@@ -41,16 +41,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="PersonaContacto"
+            android:text="Empresa"
             app:layout_constraintStart_toStartOf="@+id/lblNombreEstudianteVisita"
             app:layout_constraintTop_toBottomOf="@+id/lblNombreEstudianteVisita" />
 
         <TextView
-            android:id="@+id/lblTelefono"
+            android:id="@+id/lblNombreTutor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Telefono"
+            android:text="Tutor: NombreTutor"
             app:layout_constraintStart_toStartOf="@+id/lblEmpresaEstudianteVisita"
             app:layout_constraintTop_toBottomOf="@+id/lblEmpresaEstudianteVisita" />
     </androidx.constraintlayout.widget.ConstraintLayout>
